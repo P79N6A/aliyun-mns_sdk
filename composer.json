@@ -1,0 +1,36 @@
+{
+  "name": "suhangyang/aliyun_sdk_mns",
+  "description": "阿里云MNS SDK composer加载",
+  "version": "1.0.0",
+  "keywords": [
+    "mns",
+    "sdk",
+    "aliyun"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "suhangyang",
+      "email": "suhangyang@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Application\\": "application/",
+      "phpSdk\\": "php_sdk/"
+    },
+    "classmap": [
+      "AliyunMNS",
+      "Psr",
+      "GuzzleHttp",
+      "Samples",
+      "Tests"
+    ],
+    "files": [
+      "GuzzleHttp/functions.php",
+      "GuzzleHttp/Psr7/functions.php",
+      "GuzzleHttp/promise/functions.php"
+    ]
+  }
+}
+
